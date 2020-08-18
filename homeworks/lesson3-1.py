@@ -5,7 +5,7 @@
 
 def my_func(a: float, b: float):
     """Выполняет деление a на b
-    При делении на 0 возвращает а
+    При делении на 0 возвращает None
     :param a: float делимое
     :param b: float делитель
     :return: float частное
@@ -14,7 +14,7 @@ def my_func(a: float, b: float):
     if b != 0:
         result = a / b
     else:
-        result = a
+        result = None
 
     return result
 
@@ -34,4 +34,7 @@ while True:
     else:
         print('Это не число!')
 
-print(my_func(a, b))
+if my_func(a, b) == None:
+    print('На ноль делить нельзя!')
+else:
+    print(my_func(a, b))
