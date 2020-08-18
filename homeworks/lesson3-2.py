@@ -11,7 +11,7 @@ def user_data(**kwargs):
     **kwargs строковые данные пользователя. например, имя, телефон и др.
     :return: None
     """
-    print(kwargs)
+    print('User data - ', kwargs)
     return None
 
 data_tuple = ('name', 'surname', 'birdth_yaer', 'sity', 'email', 'phone')
