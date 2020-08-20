@@ -8,6 +8,14 @@ def my_min(*args):
             res = itm
     return res
 
+def my_map(func, coll):
+    idx = 0
+    while idx < len(coll):
+        coll[idx] = func(coll[idx])
+        idx += 1
+    return coll
+
+
 def my_func(arg1, arg2, arg3):
     """Возвращает сумму наибольших двух аргументов
     :param arg1: float
@@ -29,7 +37,7 @@ while True:
     my_list = user_str.split(' ')
 
     try:
-        my_list = map(float, my_list)
+        my_list = my_map(float, my_list)
         sum = my_func(*my_list)
         print(sum)
         break
