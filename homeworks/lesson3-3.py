@@ -1,6 +1,12 @@
 """Реализовать функцию my_func(), которая принимает три позиционных аргумента,
 и возвращает сумму наибольших двух аргументов.
 """
+def my_min(*args):
+    res = args[0]
+    for itm in args:
+        if itm < res:
+            res = itm
+    return res
 
 def my_func(arg1, arg2, arg3):
     """Возвращает сумму наибольших двух аргументов
@@ -9,7 +15,7 @@ def my_func(arg1, arg2, arg3):
     :param arg3: float
     :return: float
     """
-    min_arg = min(arg1, arg2, arg3)
+    min_arg = my_min(arg1, arg2, arg3)
 
     sum = 0
 
