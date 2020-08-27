@@ -17,5 +17,5 @@ with open('text4.txt', 'r', encoding='UTF-8') as file_reed:
             line_reed = line_reed.replace(en, my_dict[en])
         str_print = str_print + line_reed + '\t'
 
-with open('text5.txt', 'w', encoding='UTF-8') as file_write:
+with open('text4-ru.txt', 'w', encoding='UTF-8') as file_write:
     print(str_print, file=file_write)
