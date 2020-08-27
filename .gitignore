@@ -226,3 +226,6 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+/homeworks/text1.txt
+/homeworks/text5.txt
+/homeworks/text4-ru.txt
