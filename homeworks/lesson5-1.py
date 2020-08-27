@@ -4,7 +4,7 @@
 """
 
 
-with open('text1.txt', 'w') as file_obj:
+with open('text1.txt', 'w', encoding='UTF-8')  as file_obj:
     end = False
     while not end:
         user_str = input('Введите строки. Для окончания введите пустую строку и нажмите Enter')
